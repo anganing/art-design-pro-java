@@ -42,6 +42,7 @@
         <sqlite.version>3.49.1.0</sqlite.version>
         <lombok.version>1.18.24</lombok.version>
         <retrofit.version>3.1.7</retrofit.version>
+        <wx-java.version>4.7.5.B</wx-java.version>
     </properties>
 
     <dependencyManagement>
@@ -57,6 +58,13 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--企业微信集成-->
+        <dependency>
+            <groupId>com.github.binarywang</groupId>
+            <artifactId>wx-java-cp-spring-boot-starter</artifactId>
+            <version>${wx-java.version}</version>
+        </dependency>
+
         <!-- 排除 Spring Boot 默认的 Logback 依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

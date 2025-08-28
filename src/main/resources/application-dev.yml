@@ -38,3 +38,12 @@ sa-token:
 mybatis-plus:
   extension:
     enabled: true
+
+--- #################### 企业微信、微信公众号、小程序相关配置 ####################
+wx:
+  cp:
+    # 企业微信id
+    corp-id: xxx
+    corp-secret: xxx
+    # 非必填：企业微信应用id 应用要发消息给具体用户的时候需要填
+    agent-id: xxx

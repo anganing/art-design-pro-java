@@ -23,7 +23,7 @@ spring:
     allow-circular-references: true  # 允许循环引用
 
 server:
-  port: 18080
+  port: 48080
 
 sa-token:
   # 指定 Cookie 模式下自动填充 token 提交前缀
@@ -50,6 +50,7 @@ sa-token:
     enabled: true
     # 无需登录或者权限控制的资源
     excludes:
+      - /api/iboot/wx/**
       - /
       - /api/iboot/sys/public/**
       - /api/iboot/auth/login
